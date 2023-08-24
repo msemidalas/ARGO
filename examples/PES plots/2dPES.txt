@@ -1,0 +1,43 @@
+#x axis
+splot "final.dat" with lines
+set samples 25, 25
+set isosamples 50, 50
+set xlabel "Dihedral angle D13 (deg)" font ", 15" offset 0,-2,0
+
+set xtics font ", 14" border out scale 1.1,0.5 nomirror offset character 0, -0.5, 0 autojustify
+set mxtics 2
+set xrange [93:274]
+
+#y axis
+set ylabel "Dihedral angle D16 (deg)" font ", 17" rotate parallel offset -6,0,0
+set ticslevel 0
+set ytics font ", 14" border out scale 1.1,0.5 nomirror offset character 0, -0.5, 0 autojustify
+set yrange [54.6:236]
+set mytics 2
+
+#grid
+set pm3d implicit at s
+set dgrid3d 19,19
+set pm3d interpolate 0,0
+set pm3d map
+set palette rgbformulae 22,13,-31
+
+#cb
+set cblabel "Energy (Ha)" font ", 14" norotate offset character -6, 25, 0
+set cbtics font ", 12"
+set format cb "%6.3f"
+set key at screen 0.08, 0.95
+
+
+#contour
+set contour base
+set cntrparam levels 20
+set cntrparam bspline
+set style data lines
+set cntrlabel format "%7.4f" font ", 7" start 5 interval 10
+
+set colorbox vertical user origin .9, .1 size .04,.8
+splot "final.dat" with lines
+set ticslevel 0.1
+replot
+pause -1
