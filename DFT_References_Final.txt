@@ -1,0 +1,87 @@
+ARGO - DFT Functional and Quantum Chemistry Method References
+=================================================================
+
+This report contains all DFT functionals and quantum chemistry methods
+referenced in the analyzed Gaussian output files.
+
+SUMMARY
+------------------------------
+Total unique methods found: 5
+Total occurrences: 3771
+
+METHODS BY CATEGORY
+------------------------------
+Meta-GGA Functionals:
+  • SCAN
+
+Hartree-Fock Methods:
+  • HF
+  • RHF
+
+Other Methods/References:
+  • DFT
+  • Harris functional
+
+DETAILED REFERENCES
+------------------------------
+
+DFT (1 occurrence)
+-----------------------
+  File: ./examples/IR and Raman intensitites/ch3oh.log
+    Line 195: IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+
+
+HF (3 occurrences)
+----------------------
+  File: ./examples/IR and Raman intensitites/ch3oh.log
+    Line 85: #p HF/cc-pvdz Freq=Raman
+    Line 1060: 1\1\GINC-CFF058\Freq\RHF\CC-pVDZ\C1H4O1\EMMANOUS\14-Aug-2023\0\\#p HF/
+
+  File: ./ht_PES.log
+    Line 83: #n HF/6-31G(d,p) Opt=Z-matrix
+
+
+Harris functional (1370 occurrences)
+-------------------------------------
+  File: ./examples/IR and Raman intensitites/ch3oh.log
+    Line 216: Harris functional with IExCor=  205 and IRadAn=       5 diagonalized for initial guess.
+
+  File: ./ht_PES.log
+    Line 422: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 1008: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 1357: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 4472: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 4818: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 5167: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 5516: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 6203: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 6955: Harris functional with IExCor=  205 diagonalized for initial guess.
+    Line 7301: Harris functional with IExCor=  205 diagonalized for initial guess.
+    ... and 1359 more occurrences
+
+
+RHF (2396 occurrences)
+-----------------------
+  File: ./examples/IR and Raman intensitites/ch3oh.log
+    Line 386: SCF Done:  E(RHF) =  -115.049242997     A.U. after   11 cycles
+    Line 1060: 1\1\GINC-CFF058\Freq\RHF\CC-pVDZ\C1H4O1\EMMANOUS\14-Aug-2023\0\\#p HF/
+
+  File: ./ht_PES.log
+    Line 459: SCF Done:  E(RHF) =  -533.357210660     A.U. after   15 cycles
+    Line 1024: SCF Done:  E(RHF) =  -533.364212122     A.U. after   13 cycles
+    Line 1373: SCF Done:  E(RHF) =  -533.364524924     A.U. after   11 cycles
+    Line 1710: SCF Done:  E(RHF) =  -533.364559424     A.U. after   10 cycles
+    Line 2047: SCF Done:  E(RHF) =  -533.364563187     A.U. after   10 cycles
+    Line 2385: SCF Done:  E(RHF) =  -533.364564626     A.U. after   10 cycles
+    Line 2723: SCF Done:  E(RHF) =  -533.364565427     A.U. after    9 cycles
+    Line 3060: SCF Done:  E(RHF) =  -533.364565977     A.U. after    8 cycles
+    Line 3397: SCF Done:  E(RHF) =  -533.364566313     A.U. after    9 cycles
+    Line 3734: SCF Done:  E(RHF) =  -533.364566581     A.U. after    8 cycles
+    ... and 2384 more occurrences
+
+
+SCAN (1 occurrence)
+------------------------
+  File: ./ht_PES.log
+    Line 848313: Summary of Optimized Potential Surface Scan
+
