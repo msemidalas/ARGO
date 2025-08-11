@@ -1,0 +1,49 @@
+ARGO - DFT Functional and Quantum Chemistry Method References
+=================================================================
+
+This report contains all DFT functionals and quantum chemistry methods
+referenced in the analyzed Gaussian output files.
+
+SUMMARY
+------------------------------
+Total unique methods found: 4
+Total occurrences: 6
+
+METHODS BY CATEGORY
+------------------------------
+Hartree-Fock Methods:
+  • HF
+  • RHF
+
+Other Methods/References:
+  • DFT
+  • Harris functional
+
+DETAILED REFERENCES
+------------------------------
+
+DFT (1 occurrence)
+-----------------------
+  File: examples/IR and Raman intensitites/ch3oh.log
+    Line 195: IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+
+
+HF (2 occurrences)
+----------------------
+  File: examples/IR and Raman intensitites/ch3oh.log
+    Line 85: #p HF/cc-pvdz Freq=Raman
+    Line 1060: 1\1\GINC-CFF058\Freq\RHF\CC-pVDZ\C1H4O1\EMMANOUS\14-Aug-2023\0\\#p HF/
+
+
+Harris functional (1 occurrence)
+-------------------------------------
+  File: examples/IR and Raman intensitites/ch3oh.log
+    Line 216: Harris functional with IExCor=  205 and IRadAn=       5 diagonalized for initial guess.
+
+
+RHF (2 occurrences)
+-----------------------
+  File: examples/IR and Raman intensitites/ch3oh.log
+    Line 386: SCF Done:  E(RHF) =  -115.049242997     A.U. after   11 cycles
+    Line 1060: 1\1\GINC-CFF058\Freq\RHF\CC-pVDZ\C1H4O1\EMMANOUS\14-Aug-2023\0\\#p HF/
+
